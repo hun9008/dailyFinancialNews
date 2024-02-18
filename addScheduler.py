@@ -106,7 +106,7 @@ def scheduler():
             f.write(top3_translated[i])
 
 
-schedule.every(1).day.at("09:00").do(scheduler)
+schedule.every(1).day.at("08:00").do(scheduler)
 
 while True:
     schedule.run_pending()
